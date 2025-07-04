@@ -1,99 +1,264 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>endless</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 40px; background: #f8f9fa; }
-        header { background: #0074d9; color: #e2d2d2; padding: 20px 0; text-align: center; }
-        nav a { margin: 0 10px; color: #0074d9; text-decoration: none; }
-        main { margin-top: 30px; }
-        footer { margin-top: 40px; text-align: center; color: #aaa; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Endless | Aarif's Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f8f9fa;
+      color: #222;
+    }
+    header {
+      background: #dcdfe3;
+      color: #0e0d0d;
+      padding: 32px 0 20px 0;
+      text-align: center;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 14px;
+      color: #222;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 1px;
+      transition: color .2s;
+    }
+    nav a:hover {
+      color: #00ffc3;
+    }
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 18px;
+    }
+    section {
+      margin-bottom: 48px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px #e5e8ec;
+      padding: 32px 24px;
+    }
+    h1, h2, h3 {
+      margin-top: 0;
+      margin-bottom: 14px;
+      font-weight: 700;
+    }
+    h1 {
+      font-size: 32px;
+      color: #00ffc3;
+      letter-spacing: 1px;
+    }
+    h2 {
+      font-size: 26px;
+      color: #0e0d0d;
+    }
+    h3 {
+      font-size: 20px;
+      color: #00b294;
+      margin-bottom: 10px;
+    }
+    .intro {
+      text-align: center;
+      background: #f0f8f7;
+      color: #222;
+      border: 2px solid #00ffc3;
+    }
+    .intro a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 28px;
+      background: #00ffc3;
+      color: #0f0f0f;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background .2s;
+    }
+    .intro a:hover {
+      background: #00d2a1;
+    }
+    .prank-link {
+      display: inline-block;
+      margin-top: 18px;
+      font-size: 16px;
+      color: #e83e8c;
+      background: #f9eaff;
+      padding: 8px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background .2s;
+    }
+    .prank-link:hover {
+      background: #eed2fa;
+    }
+    .contact-info {
+      margin-bottom: 18px;
+    }
+    .contact-form {
+      max-width: 430px;
+      background: #f8f9fa;
+      margin: 0 auto;
+      padding: 24px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px #e3e3e3;
+    }
+    .contact-form label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 16px;
+      border-radius: 5px;
+      border: 1px solid #bdbdbd;
+      font-size: 15px;
+      resize: vertical;
+      transition: border-color .2s;
+    }
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #00ffc3;
+      outline: none;
+    }
+    .contact-form button {
+      background: #00ffc3;
+      color: #0f0f0f;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background .2s;
+    }
+    .contact-form button:hover {
+      background: #00dab0;
+    }
+    .thanks-message {
+      color: #1c8c50;
+      font-size: 16px;
+      margin-top: 18px;
+      text-align: center;
+      font-weight: 500;
+    }
+    footer {
+      margin-top: 60px;
+      padding: 40px 0 30px 0;
+      text-align: center;
+      color: #2d2a2a;
+      background: #ededed;
+      font-size: 16px;
+      border-top: 1px solid #e0e0e0;
+    }
+    @media (max-width: 600px) {
+      main, section { padding: 12px; }
+      .contact-form { padding: 12px; }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1><h1 style="font-size: 32px; font-weight: 600; letter-spacing: 1px;">
-  Hi, I’m Aarif — A Web Developer & Digital Explorer
-</h1>
-</h1>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <h2><section id="home" style="background-color: #0f0f0f; color: #ffffff; padding: 60px 20px; text-align: center; border-radius: 12px;">
-  <h1 style="font-size: 36px; color: #00ffc3;">Hi, I'm Aarif.</h1>
-  <p style="font-size: 18px; max-width: 700px; margin: 0 auto; line-height: 1.6;">
-    A passionate web developer and aspiring coder from India.<br>
-    I specialize in building clean, functional, and creative digital experiences.<br>
-    Currently learning, constantly growing — and always ready for the next challenge.
-  </p>
-  <a href="#contact" style="display: inline-block; margin-top: 24px; padding: 12px 24px; background-color: #00ffc3; color: #0f0f0f; text-decoration: none; font-weight: bold; border-radius: 8px;">
-  <section id="home" style="background-color: #0f0f0f; color: #ffffff; padding: 60px 20px; text-align: center; border-radius: 12px;">
-  <h1 style="font-size: 36px; color: #00ffc3;">Hi, I'm Aarif.</h1>
-  <p style="font-size: 18px; max-width: 700px; margin: 0 auto; line-height: 1.6;">
-    A passionate web developer and aspiring coder from India.<br>
-    I specialize in building clean, functional, and creative digital experiences.<br>
-    Currently learning, constantly growing — and always ready for the next challenge.
-  </p>
-  <a href="#contact" style="display: inline-block; margin-top: 24px; padding: 12px 24px; background-color: #00ffc3; color: #0f0f0f; text-decoration: none; font-weight: bold; border-radius: 8px;">
-    Let’s Connect
-  </a>
+  <header>
+    <h1>Hi, I’m Aarif — Web Developer & Digital Explorer</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="intro">
+      <h1>Hi, I'm Aarif.</h1>
+      <p style="font-size: 18px; max-width: 700px; margin: 0 auto; line-height: 1.6;">
+        A passionate web developer and aspiring coder from India.<br>
+        I specialize in building clean, functional, and creative digital experiences.<br>
+        Currently learning, constantly growing — and always ready for the next challenge.
+      </p>
+      <a href="#contact">Let’s Connect</a>
+      <br><br>
+      <a href="prank.html" class="prank-link">Click Here</a>
+    </section>
 
-  <!-- 🔥 Add this prank button below -->
-  <br><br>
-  <a href="prank.html" class="prank-button">Click Here</a>
-</section>
-  </a>
-</section>
-</h2>
-            <p><h1>Hello World 👾</h1>
-<p>I’m Aarif — learning, building, never quitting.</p>
-<p>Code is my canvas. Dreams are my drive.</p>
-<p>Let’s create something extraordinary.</p>
-!</p>
-        </section>
-        <section id="about">
-            <h2>About</h2>
-            <p>Hey, I’m Aarif—just a small-town dreamer with big-code energy.
-While the world scrolls, I build.
-While others swipe, I type.
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        Just a small-town dreamer with big-code energy.<br>
+        While the world scrolls, I build. While others swipe, I type.<br><br>
+        I’m the kind of soul who doesn’t sleep on ambition. I’ve got one hand on the keyboard, the other reaching for the stars. Coding isn’t just what I do—it’s who I am. I’m obsessed with how things work, how websites breathe, how games move, and how every little click has a rhythm.<br><br>
+        I come from a place where Wi-Fi sometimes lags, but my passion? Never.<br>
+        School days are hectic, life throws its curveballs, but no matter how tired I get—I never quit. I believe that even when I fail, I’m falling forward.<br><br>
+        💡 I’m not just trying to be a coder.<br>
+        I’m trying to be a creator. A solver. A spark in the circuit.<br><br>
+        So whether you’re here to vibe with my projects, collab on something wild, or just see what a curious mind can build—I’m glad you stopped by.<br>
+        Let’s make the future.
+      </p>
+    </section>
 
-I’m the kind of soul who doesn’t sleep on ambition. I’ve got one hand on the keyboard, the other reaching for the stars. Coding isn’t just what I do—it’s who I am. I’m obsessed with how things work, how websites breathe, how games move, and how every little click has a rhythm.
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-info">
+        <p><strong>📞 Phone:</strong> <a href="tel:+919103778851">+91 91037 78851</a></p>
+        <p><strong>📧 Email:</strong> <a href="mailto:silk74781@gmail.com">silk74781@gmail.com</a></p>
+      </div>
+      <div class="contact-form">
+        <h3>Send Me a Message</h3>
+        <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" id="fs-form">
+          <label for="name">Your Name</label>
+          <input type="text" name="name" id="name" required autocomplete="name" />
 
-I come from a place where Wi-Fi sometimes lags, but my passion? Never.
-School days are hectic, life throws its curveballs, but no matter how tired I get—I never quit. I believe that even when I fail, I’m falling forward.
+          <label for="email">Your Email</label>
+          <input type="email" name="email" id="email" required autocomplete="email" />
 
-💡 I’m not just trying to be a coder.
-I’m trying to be a creator. A solver. A spark in the circuit.
+          <label for="message">Your Message</label>
+          <textarea name="message" id="message" rows="5" required></textarea>
 
-So whether you’re here to vibe with my projects, collab on something wild, or just see what a curious mind can build—I’m glad you stopped by.
-
-Let’s make the future..</p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p><div class="contact-info">
-  <h2>Contact Me</h2>
-  <p><strong>📞 Phone:</strong> <a href="tel:+919103778851">+91 91037 78851</a></p>
-  <p><strong>📧 Email:</strong> <a href="mailto:silk74781@gmail.com">silk74781@gmail.com</a></p>
-</div>
-.</p>
-        </section>
-    </main>
-    <footer>
-        &copy; 2025 endless. All rights reserved.
-    </footer>
-      <p>Go back before it’s too late 👀</p>
-
-  <p style="margin-top: 40px; font-size: 20px; color: #888;">
-    Thanks for playing along 😄 — Ty for being a good sport!
-  </p>
-</body>
+          <button type="submit">Send</button>
+          <div class="thanks-message" id="thanks-message" style="display:none;">
+            Thank you! Your message has been sent.
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Endless. All rights reserved.<br>
+    <span>Go back before it’s too late 👀</span>
+    <p style="margin-top: 24px; font-size: 18px; color: #888;">
+      Thanks for playing along 😄 — Ty for being a good sport!
+    </p>
+  </footer>
+  <script>
+    // Optional UX: show thank you message without reloading page
+    document.getElementById('fs-form').onsubmit = function(e) {
+      e.preventDefault();
+      var form = e.target;
+      var data = new FormData(form);
+      fetch(form.action, {
+        method: "POST",
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      }).then(function(response) {
+        if (response.ok) {
+          document.getElementById('thanks-message').style.display = 'block';
+          form.reset();
+        } else {
+          response.json().then(function(data){
+            alert(data.error || "Oops! There was a problem submitting your form");
+          });
+        }
+      }).catch(function() {
+        alert("Oops! There was a problem submitting your form");
+      });
+    };
+  </script>
 </body>
 </html>
